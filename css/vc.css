@@ -1,0 +1,110 @@
+/* body {
+  background: url(../images/Background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
+body {
+  background: url("../images/Background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+}
+/* nav bar */
+.custom-navbar {
+  background-color: white;
+  border-radius: 30px;
+}
+
+/* buttons*/
+.btn {
+  cursor: pointer;
+}
+
+/* dropdown activity */
+.dropdown-activity {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-img {
+  /* border-radius: 50%; */
+  height: 30px;
+  width: 30px;
+}
+.nav-btn {
+  border: 1px solid black !important;
+  border-radius: 50px;
+  background-color: white;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.btn-radius {
+  border-radius: 30px;
+}
+
+.btn-pink {
+  background-color: #eb415a;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-orange {
+  background-color: orange;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-blue {
+  background-color: #0389fe;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-brown {
+  background-color: brown;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-activity {
+  border-radius: 30px;
+  margin-top: 10px;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  background-color: white;
+  box-shadow: 2px 2px 2px black;
+}
+
+/* eazel board */
+.eazel-top {
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eazel-bottom {
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*card background*/
+.card {
+  background-color: transparent;
+  border: none !important;
+}
+
+/* disabled */
+
+.not-allowed {
+  cursor: not-allowed !important;
+}

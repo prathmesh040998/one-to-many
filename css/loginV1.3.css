@@ -1,0 +1,475 @@
+#navButton {
+  width: 17.5em;
+}
+.btnNavbar {
+  background-color: #ffca00 !important;
+  color: #8a8b94 !important;
+  border-radius: 1vw !important;
+}
+.freeclass {
+  background-color: #ffca00 !important;
+  color: #383c59 !important;
+}
+.font {
+  font-family: "Poppins";
+}
+.font1 {
+  font-family: "Lato";
+}
+.card {
+  background-color: #f6e9ed !important;
+}
+.coursesAndPrices {
+  background-color: #faf0f3 !important;
+}
+.moduleButtonBeginner,
+.moduleButtonIntermediate,
+.moduleButtonAdvanced {
+  background-color: #ba2e5f !important;
+}
+
+#border {
+  border: 2px solid #ba2e5f;
+}
+
+.freeClass {
+  background-color: #feca00 !important;
+}
+
+.card-header {
+  background-color: #6eb21d !important;
+  color: #ffff;
+}
+.card-title {
+  color: #ba2e5f !important;
+}
+.card-body {
+  background-color: #fff !important;
+}
+.moredetails {
+  color: #ba2e5f !important;
+}
+
+.buynow {
+  background-color: #ba2e5f !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+.wording {
+  font-size: 1vw;
+  font-weight: 400;
+}
+.wording1 {
+  color: #fff !important;
+}
+
+.parentAbout {
+  color: #ba2e5f !important;
+}
+.ParentSaying {
+  background-color: #faf0f3 !important;
+}
+.freeClassBorder {
+  background-color: #faf0f3 !important;
+}
+.CoFounders {
+  background-color: #ba2e5f !important;
+}
+.footer {
+  background-color: #faf0f3 !important;
+}
+.ourSystem {
+  color: #ba2e5f !important;
+}
+
+#mobileView {
+  max-width: 100%;
+  height: auto;
+}
+.freeclassbold {
+  height: 36px;
+  width: 180px;
+}
+.everyChildCode {
+  background: linear-gradient(
+    105.29deg,
+    #ba2e5f 23.45%,
+    #504ca4 94.28%,
+    #2e55ba 117.17%
+  );
+}
+
+.backgroundimg {
+  background-image: url("../images/Group\ 135.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+}
+.backgroundImg1 {
+  background-image: url("../images/Group\ 128.svg");
+  background-size: cover;
+  background-color: #ba2e5f !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .wording {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .progressLine {
+    display: none;
+  }
+}
+
+.hover1 {
+  background-color: #ba2e5f !important;
+  color: #fff !important;
+}
+
+.hover2 {
+  background-color: #faf0f3 !important;
+  color: #828282 !important;
+}
+/* Modal CSS */
+
+.img-contact {
+  margin: 8px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.img-contact:hover {
+  filter: contrast(120%);
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+.modalHeader {
+  background-color: #ba2e5f !important;
+}
+.modalContent {
+  background-color: #faf0f3 !important;
+}
+.modalFooter {
+  background-color: #ba2e5f !important;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 8px) {
+  .Contact {
+    font-size: 3vw;
+  }
+}
+
+.modulecard {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 80px;
+  right: 40px;
+
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+.float1 {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 175px;
+  right: 40px;
+
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.my-float1 {
+  margin-top: 30px;
+}
+
+.link {
+  padding: 15px 30px;
+  margin: 10px;
+  display: inline-block;
+  color: #000;
+
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+#button {
+  display: inline-block;
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 45px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+#ourSystem1 {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #ourSystem {
+    display: none;
+  }
+  #ourSystem1 {
+    display: inline-block;
+  }
+}
+
+/* Login Beigin */
+.login1 {
+  background-image: url("../images/Group\ 137.svg");
+  background-size: cover;
+  min-height: 90vh;
+}
+.login2 {
+  background-color: #f6e9ed !important;
+}
+@media only screen and (max-width: 600px) {
+  #mobileView {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #desktopView {
+    display: none;
+  }
+}
+
+.inp {
+  border: none !important;
+  border-bottom: 2px solid #feca00 !important;
+  outline: none !important;
+  background-color: transparent !important;
+  color: white;
+}
+.nextButton {
+  background-color: #ffca00 !important;
+  border-radius: 13px !important;
+}
+
+::placeholder {
+  color: white !important;
+  opacity: 60% !important;
+  height: "21px";
+  width: "148px";
+}
+input {
+  color: white !important;
+}
+.first-txt {
+  position: relative;
+}
+
+/* Login end */
+/* Reset Password */
+.btnNavbar {
+  background-color: #ffca00 !important;
+  color: #383c59 !important;
+  border-radius: 1vw !important;
+}
+
+#btnNavbar {
+  width: 200px;
+}
+
+.inp {
+  border: none !important;
+  border-bottom: 2px solid #feca00 !important;
+  outline: none !important;
+  background-color: transparent !important;
+  color: white;
+}
+
+.Loginhere {
+  color: #feca00 !important;
+}
+
+.signupbtn {
+  background-color: #feca00 !important;
+}
+.Firstlesson {
+  background-color: #f6e9ed;
+}
+.Registerbackgroundimg {
+  background-image: url("../images/Group\ 137.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  height: auto;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #fff !important;
+  opacity: 60% !important;
+}
+
+input[type="text"] {
+  color: #fff !important;
+}
+
+input[type="date"] {
+  color: #fff !important;
+}
+
+input[type="email"] {
+  color: #fff !important;
+}
+
+@media screen and (max-width: 600px) {
+  .logoRegister,
+  .RegisterDesktopImages {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .RegisterInfoImages {
+    display: none;
+  }
+}
+
+.nextButton {
+  background-color: #ffca00 !important;
+}
+
+/* Reset Password end */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+}
+
+.mobileHeading {
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.mobileSubheading {
+  font-family: Lato;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.mobileSlot1Button {
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: #feca00 !important ;
+}
+
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.column1 {
+  float: center;
+  width: 40%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}

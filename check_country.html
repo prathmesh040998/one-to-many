@@ -1,0 +1,17 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+  $.get("https://www.cloudflare.com/cdn-cgi/trace", function (data) {
+    con = data.split("\n")[8];
+    con = con.split("=")[1];
+    console.log(con);
+    $("#country").text(con);
+    if (con == "IN") {
+      console.log("india");
+    } else {
+      console.log("other");
+    }
+  });
+</script>
+
+<span id="country" style="font-size: 300px"></span>

@@ -1,0 +1,1554 @@
+#button-faded .hover1
+{
+  opacity: 0.4;
+}
+#button-faded .hover2
+{
+  opacity: 1;
+}
+.hover1
+{
+  opacity: 0.6;
+}
+.hover2
+{
+  opacity: 1;
+}
+.BackgroungLoginPage
+{
+  background: url('images/loginBackground.jpg'); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size:100% 100%; 
+  height: 120vh;
+  width: 100%;
+}
+.BackgroundForAllPages
+{
+  background: url('images/Background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%; 
+  height: 120vh;
+  width: 100%;    
+}
+#loginForm
+{
+  margin-top: 240px;
+}
+.LogoLoginPage
+{
+  width: 110px;
+  height: 180px;
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 50px);
+}
+#img
+{
+  width: 70px;
+  height: 120px;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px; 
+}
+.LogoForAllPages
+{
+  width: 70px;
+  height: 120px;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+#bookFree
+{
+  border-radius: 50px;
+}
+.RegisterLink
+{
+  text-align: center;
+  font-size: 13px;
+}
+#exampleCheck
+{
+  height: 15px;
+  width: 15px;
+}
+.form-check-label
+{
+  font-size: 13px;
+}
+.ForgotPasswordLink
+{
+  float: right;
+  font-size: 13px;
+}
+#Login,#exampleInputUsername,#exampleInputPassword
+{
+  border-radius: 30px;
+  font-size: 18px;
+}
+.CopyWriteMessage
+{
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+
+
+/* _________________Common CSS for Student & teacher VC__________________ */
+.nav-item
+{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+#nav
+{
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+  margin-top: 8px;
+}
+#nav-dropdown
+{
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+  padding: 0px;
+  font-size: 12px;
+}
+.AccountLogo
+{
+  width: 25px;
+  height: 25px;
+}
+.LogoutLogo
+{
+  width: 20px;
+  height: 15px;
+}
+.VCHeading2
+{
+  text-align: center;
+  -moz-box-align: center;
+  margin-top: 50px;
+}
+.VCcircle
+{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.ActivityDropdown
+{
+  background-color: transparent !important;
+  border: none;
+}
+
+
+/* ___________________CSS for Student VC__________________ */
+#FullScreenBtn
+{
+  margin-top: -1%;
+  margin-right: 20px;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+.ContainerStudentVCFullScreen,.ContainerStudentVCShortScreen
+{
+  position: relative;
+}
+#StudentVCFullScreenEazel
+{
+  height: 70%;
+  width: 70%;
+}
+#cardForFullScreen
+{
+  margin-top: -56%;
+  margin-left: -10%;
+  width: 83rem;
+  height: 27rem;
+  background-color: rgb(148, 148, 147);
+}
+#StudentVCProjectLinkBtn,#StudentVCProjectDescriptionsBtn,
+#StudentVCStudentActivityShortScreenBtn,
+#StudentVCStudentActivityFullScreenBtn
+{
+  border-radius: 30px;
+}#StudentVCShortScreenEazel
+{
+  margin-left: -15%;
+  height: 110%;
+  width: 110%;
+}
+#cardForShortScreen
+{
+  margin-top: -82%;
+  margin-left: -10%;
+  width: 40rem;
+  height: 23rem;
+  background-color:  rgb(148, 148, 147);
+}
+.TableForStudentVCStudentActivity tr th button 
+{
+  border-radius: 30px;
+  font-size: 12px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+} 
+
+
+/* ____________________CSS for teacher VC__________________ */
+#FullScreenBtnTeacherVC,#TeacherVCAccuracy,#TeacherVCPerseverance,#TeacherVCCreativity
+{
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  width: 110px;
+  border-radius: 30px;
+}
+.ContainerTeacherVCFullScreen,.ContainerTeacherVCShortScreen
+{
+  position: relative;
+}
+#TeacherVCFullScreenEazel
+{
+  height: 70%;
+  width: 70%;
+}
+#cardForFullScreenTeacherVC
+{
+  margin-top: -56%;
+  margin-left: -10%;
+  width: 83rem;
+  height: 27rem;
+  background-color:  rgb(148, 148, 147);
+}
+#TeacherVCProjectLinkBtn,#TeacherVCProjectDescriptionsBtn,
+#TeacherVCTeacherActivityFullScreenBtn,
+#TeacherVCTeacherActivityShortScreenBtn,
+#TeacherVCStudentActivityShortScreenBtn
+{
+  border-radius: 30px;
+}
+#TeacherVCShortScreenEazel
+{
+  margin-left: -15%;
+  height: 110%;
+  width: 110%;
+}
+#cardForShortScreenTeacherVC
+{
+  margin-top: -82%;
+  margin-left: -10%;
+  width: 40rem;
+  height: 23rem;
+  background-color: rgb(148, 148, 147);
+}
+.TableForTeacherVCTeacherActivity tr th button 
+{
+  border-radius: 30px;
+  font-size: 12px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+} 
+.TableForTeacherVCStudentActivity tr th button 
+{
+  border-radius: 30px;
+  font-size: 12px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+} 
+
+
+
+
+
+    
+
+
+
+
+
+
+
+/*_______________________CSS for Registration_____________________*/
+/*_______________________CSS for Registration_____________________*/
+#RegistrationBtnStudent,#RegistrationBtnTeacher
+{
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+  margin-top: 35%;
+}
+#RegStudent,#RegTeacher
+{
+  border-radius: 30px;
+  width: 200px;
+}
+.StudentRegistrationForm
+{ 
+  padding: 8%;
+  padding-bottom: 3%;
+  border: 1px solid black;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+  width: 100%;  
+}
+.TeacherRegistrationForm
+{ 
+  padding: 8%;
+  padding-bottom: 3%;
+  border: 1px solid black;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+  width: 100%;  
+}
+#ParentFirstName,#ParentLastName,#StudentFirstName,#StudentLastName,
+#UserNameSReg,#EmailIdSReg,#PasswordSReg,#MobileSReg,#DOBSReg,#RefCode,
+#TeacherFirstName,#TeacherLastName,#TeacherQualifications,
+#UserNameTReg,#EmailIdTReg,#PasswordTReg,#MobileTReg,#DOBTReg
+{
+  margin-top: -2%;
+  border: none;
+  border-bottom: 2px solid #005b8f;
+  font-size: 14px;
+}
+#inputaCategory
+{
+  margin-top: 0%;
+  border: none;
+  border-bottom: 2px solid #005b8f;
+  font-size: 14px;
+}
+.RegFieldName
+{
+  font-size: 13px;  
+}
+
+
+
+
+
+
+
+
+
+
+/*____________________CSS for Student Dashboard______________________*/    
+/*____________________CSS for Student Dashboard______________________*/
+.navbarDashboard
+{
+  margin-top: 20px;
+  margin-right: 50px;
+  padding-top: 3px;
+  padding-bottom: 50px;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  font-size: 20px;
+}
+.BoyAvatar,.Confittee,.RocketAvatar
+{
+  width: 100px;
+  height: 100px;
+}
+#JoinClassNow,#ProjectDetails,#GetMoreClasses,#ScheduleYourNextClass,#CancelRescheduleClass
+{
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+#Module1,#Module3
+{
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 15rem;
+  height: 25rem; 
+  border-radius: 30px;
+  border: 2px solid rgb(8, 130, 230);
+  -webkit-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.75);;
+}
+#Module2
+{
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 16rem;
+  height: 27rem; 
+  border-radius: 30px;
+  border: 2px solid rgb(8, 130, 230);
+  -webkit-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.75);
+}
+.navbarModule
+{
+  margin: 3px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+#ScheduledClasses,#CancelledClasses,#CompletedClasses
+{
+  margin-top: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+#CancelRescheduleClass
+{
+  border-radius: 30px;
+}
+.PartationLine
+{
+  margin: 15px;
+  border: none;
+  border-bottom: 2px solid rgb(117, 180, 231);
+}
+.ModuleMessage
+{
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+#BtnRedeem2
+{
+  color: rgb(233, 140, 34);
+  border: 2px solid rgb(233, 140, 34);
+  border-radius: 30px;
+  font-size: 12px;
+  padding: 1px;
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+#BtnRedeem3
+{
+  color: rgb(233, 140, 34);
+  border: 2px solid rgb(233, 140, 34);
+  border-radius: 30px;
+  font-size: 12px;
+  padding: 1px;
+  margin-top: 5px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+#BuyNow2
+{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#BuyNow3
+{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#BoyAvatarDashboardDropdown,#ConfitteeDashboardDropdown,#RocketDashboardDropdown
+{
+  width: 200px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  font-size: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+.BoyAvatarDropdown,.ConfitteeDropdown,.RocketAvatarDropdown
+{
+  width: 50px;
+  height: 50px;
+}
+.StudentInfo
+{
+  border: none;
+  border-bottom: 2px solid #005b8f;
+  color: rgb(150, 160, 160);
+}
+#ConfitteeContainer
+{
+  margin: 0px;
+  padding: 0px;
+}
+.ConfitteeEmoji
+{
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+} 
+/* ________________________CSS for All Tables_________________________ */
+.PaneTable 
+{
+  border-collapse: separate;
+}
+/* ______________________CSS for Join Class Now_______________________ */
+.PartationLineJoinClassNow
+{
+  border: none;
+  border-bottom: 2px solid black;
+}
+.PaneTableJoinClassNow thead tr th,
+.PaneTableJoinClassNow2 thead tr th
+{
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.PaneTableJoinClassNow tbody td,
+.PaneTableJoinClassNow2 tbody td
+{
+  border-left: solid 2px black;
+}
+.PaneTableJoinClassNow tr td:nth-child(4) button
+{
+  background-color: #e7ecee;
+  border-radius: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: solid 1px black;
+}
+.PaneTableJoinClassNow2 tr td:nth-child(4) button
+{
+  border-radius: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: solid 1px black;
+}
+#ScheduleYourNextClassButton
+{
+  border-radius: 30px;
+  border: solid 1px black;
+  font-weight: 700;
+}
+/* ______________________CSS for Project Details_______________________ */
+.PaneTableProjectDetails
+{
+  border-collapse: separate;
+  table-layout: fixed; 
+  width: 200px;
+}
+.BackgroungProjectDetails
+{
+  background-color:lightgray;
+  width: 100%;
+  padding: 4px;
+  margin-top: 10px;
+  margin-left: 5px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+.ColumnHeadingProjectDetails
+{
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  border: 50px solid white;
+}
+.PaneTableProjectDetails tr td:nth-child(even) button 
+{
+  border-radius: 70px;
+}
+/* __________________CSS for Schedule Your Next Class__________________ */
+.BackgroungScheduleYourNextClass
+{
+  background-color: beige;
+  width: 85%;
+  padding: 3px;
+  margin-top: 14px;
+  margin-right: 30px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+.ColumnHeadingScheduleClass
+{
+  background-color: #65ad50;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+#ScheduleThisClass1,#ScheduleThisClass2,#ScheduleThisClass3,#ScheduleThisClass4,#ScheduleThisClass5
+{
+  border-radius: 80px;
+  font-size: 10px;
+  font-weight: 600;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+/* ________CSS for Heading of Schedulled, Cancelled, Completed Classes_________ */
+#CancelledClassHeading,#ScheduleClassHeading,#CompletedClassHeading
+{
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-style: italic;
+  margin-top: 10px; 
+}
+/* _____________CSS for Schedulled, Cancelled, Completed Classes______________________ */
+.BackgroungSchedulledClasses,.BackgroungCancelledClasses,.BackgroungCompletedClasses
+{
+  width: 100%;
+  padding: 3px;
+  margin: 1px;
+}
+.ColumnHeadingSchedulledClasses,.ColumnHeadingCancelledClasses,.ColumnHeadingCompletedClasses
+{
+  background-color: rgba(58, 55, 54, 0.486);
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+#SchedulledClassesLinkButton1,#SchedulledClassesLinkButton2,
+#SchedulledClassesLinkButton3,#SchedulledClassesLinkButton4,
+#SchedulledClassesLinkButton5
+{
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 600;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.PaneTable tr td:nth-child(5) button 
+{
+  border-radius: 70px;
+}
+/* __________________CSS for Rechedule Your Next Classes__________________ */
+.BackgroungRecheduleYourNextClass
+{
+  background-color: beige;
+  width: 95%;
+  padding: 3px;
+  margin-top: 14px;
+  margin-right: 30px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+.ColumnHeadingRecheduleClass
+{
+  background-color: #e25d20;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+#RecheduleThisClass1,#RecheduleThisClass2,#RecheduleThisClass3,#RecheduleThisClass4,#RecheduleThisClass5
+{
+  border-radius: 80px;
+  font-size: 10px;
+  font-weight: 600;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+/* __________________CSS to Disable Buttons__________________ */
+#payInfo input[type=text]
+{
+  width: 50%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid blue; 
+}
+#redeemCode 
+{
+  width: 20%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid blue;        
+}
+#courseName,#orderTotal  
+{
+  width: 20%;
+  box-sizing: border-box;
+  border: none;
+}
+#payDetails span
+{
+  text-align: right;
+}
+#payInfo input::placeholder 
+{
+  text-align: left;
+}  
+#payButton button
+{
+  width: 50%;
+  border-radius: 70px;
+  margin: 8px;
+}   
+.navbar-nav .ml-auto{
+  text-align: right;
+}
+#nav
+{
+  padding: 3px;
+}     
+#ButtonForWeek1Table button,#ButtonForWeek2Table button 
+{
+  background-color: orange;
+}
+#ScheduleThisClassButton
+{
+  overflow:scroll;
+  width: 100%;
+  height: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*____________________CSS for Teacher Dashboard______________________*/    
+/*____________________CSS for Teacher Dashboard______________________*/
+.TeacherDashboardMainNavbar
+{
+  padding: 2px;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 50px;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(51, 37, 37, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.LogoForTeacherDashboard
+{
+  width: 50px;
+  height: 80px;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+.navbarTeacherDashboard
+{
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-right: 20px;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.TeacherDashboardButtons button
+{
+  border-radius: 35px;
+  font-weight: 700;
+  border-color: #000000;
+  font-size: 12px;
+}
+#ButtonCancelAScheduledClass
+{
+  background-color:  #da0f63;
+  color: white;
+}
+.GirlAvatarTeacherDashboard,.ConfitteeTeacherDashboard
+{
+  width: 35px;
+  height: 35px;
+}
+.Avatar
+{
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.GirlAvatarTeacherDashboardDropdown
+{
+  width: 80px;
+  height: 80px;
+}
+.ConfitteeTeacherDashboardDropdown
+{
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+#TeacherDashboardProfileDropdown,#TeacherDashboardConfitteeDropdown
+{
+  width: 350px;
+  height: 450px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.TeacherRewardsMessage
+{
+  font-size: 14px;
+}
+#TeacherRewardsMessageCoin1,#TeacherRewardsMessageCoin2,#TeacherRewardsMessageCoin3
+{
+  border-radius: 60px;
+}
+.TeacherDashboardInfo
+{
+  border: none;
+  border-bottom: 2px solid #3ea6e2;
+  color: rgb(150, 160, 160);
+}
+.JoinClassNowPaneTeacherDashboardBackground,
+.SchedularPaneTeacherDashboardBackground,
+.CirclesBtnPaneTeacherDashboardBackground,
+.BasicCirclePaneTeacherDashboardBackground,
+.IntermediateCirclePaneTeacherDashboardBackground,
+.AdvancedCirclePaneTeacherDashboardBackground,
+.ScheduledClassesTeacherDashboardBackground,
+.CompletedClassesTeacherDashboardBackground,
+.CancelledClassesTeacherDashboardBackground,
+.CancelAScheduledClassesTeacherDashboardBackground
+{
+  padding: 1%;
+  width: 95%;
+}
+/* ____________________CSS for Join Class Now_____________________ */
+.JoinClassNowMessage
+{
+  font-size: 12px;
+}
+.JoinClassNowTeacherDashboardTable thead tr th
+{
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.JoinClassNowTeacherDashboardTable tbody td
+{
+  border-left: solid 2px black;
+}
+.JoinClassNowTeacherDashboardTable tr td:nth-child(4) a
+{
+  background-color: rgb(224, 222, 216);
+  border-radius: 30px;
+  width: 120px;
+  border: solid 1px black;
+}
+/* _______________________CSS for Scheduler________________________ */
+.SchedularTeacherDashboardTable
+{
+  table-layout: fixed; 
+  width: 200px;
+}
+#TeacherDashboardButtonWeek1,#TeacherDashboardButtonWeek2,
+#TeacherDashboardButtonWeek1Summary,#TeacherDashboardButtonWeek2Summary
+{
+  width: 120px;
+  border-radius: 35px;
+  font-weight: 700;
+  border-color: #000000;
+  font-size: 12px;
+}
+.SchedularTeacherDashboardTable thead tr th
+{
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.SchedularTeacherDashboardTable tbody td
+{
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.SchedularTeacherDashboardTable tr td select
+{
+  width: 140px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: solid 1px black;
+}
+#TeacherDashboardConfirmAvailabilityScheduleBtn
+{
+  margin-left: 750px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 600;
+  width: 250px;
+  border-color: #3b3b3b;
+  border-radius: 30px;
+  margin-bottom: 5%;
+}
+#TeacherDashboardEditCancelAvailabilityBtn,#TeacherDashboardSubmitAvailabilityBtn
+{
+  margin-right: 10px;
+  font-weight: 600;
+  width: 180px;
+  height: 50px;
+  border-color: #3b3b3b;
+  border-radius: 30px;
+  margin-bottom: 10%;
+}
+.SchedularSummaryTeacherDashboardTable thead tr th
+{
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.SchedularSummaryTeacherDashboardTable tbody td
+{
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.SchedularSummaryTeacherDashboardTable
+{
+  table-layout: fixed; 
+  width: 200px;
+}
+.SchedularSummaryTeacherDashboardTable tr td input
+{
+  text-align: center;
+  border-radius: 30px;
+  border-color: black;
+  color: white;
+  font-weight: 600;
+  height: 30px;
+} 
+
+/* ____________________CSS for Review Projects_____________________ */
+
+/* _______________________CSS for Resources________________________ */
+
+/* ____________________CSS for Student Database___________________ */
+#BasicCircle,#IntermediateCircle,#AdvancedCircle
+{
+  margin-left: 70%;
+  padding: 5%;
+  padding-top: 20%;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+}
+#BasicSearchBox,#IntermediateSearchBox,#AdvancedSearchBox
+{
+  border-radius: 30px;
+}
+.BasicCirclePaneTeacherDashboardTable thead tr th,
+.IntermediateCirclePaneTeacherDashboardTable thead tr th,
+.AdvancedCirclePaneTeacherDashboardTable thead tr th
+{
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.BasicCirclePaneTeacherDashboardTable tbody td,
+.IntermediateCirclePaneTeacherDashboardTable tbody td,
+.AdvancedCirclePaneTeacherDashboardTable tbody td
+{
+  border-left: solid 2px black;
+}
+.BasicCirclePaneTeacherDashboardTable tr td:nth-child(3) button,
+.IntermediateCirclePaneTeacherDashboardTable tr td:nth-child(3) button,
+.AdvancedCirclePaneTeacherDashboardTable tr td:nth-child(3) button
+{
+  border-radius: 30px;
+  width: 120px;
+}
+.btn-circle.btn-sm 
+{ 
+  width: 250px; 
+  height: 250px; 
+  padding: 6px 0px; 
+  border-radius: 125px; 
+  font-size: 40px; 
+  text-align: center;
+  background-color: white;
+  color: black; 
+} 
+/* ___________________CSS for Scheduled Classes___________________ */
+.ScheduledClassesTeacherDashboardTable thead tr th
+{
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.ScheduledClassesTeacherDashboardTable tbody td
+{
+  border-left: solid 2px black;
+}
+.ScheduledClassesTeacherDashboardTable tr td:nth-child(6) a
+{
+  color: #493ee2;
+  background-color: rgb(224, 222, 216);
+  border-radius: 30px;
+  width: 180px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  border: solid 1px black;
+}
+/* ___________________CSS for Completed Classes___________________ */
+.CompletedClassesTeacherDashboardTable thead tr th
+{
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.CompletedClassesTeacherDashboardTable tbody td
+{
+  border-left: solid 2px black;
+}
+.CompletedClassesTeacherDashboardTable tr td:nth-child(6) a
+{
+  color: #493ee2;
+  background-color: rgb(224, 222, 216);
+  border-radius: 10px;
+  width: 150px;
+  border: solid 1px black;
+}
+/* ___________________CSS for Cancelled Classes___________________ */
+.CancelledClassesTeacherDashboardTable thead tr th
+{
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.CancelledClassesTeacherDashboardTable tbody td
+{
+  border-left: solid 2px black;
+}
+/* ______________CSS for Cancel A Scheduled Classes________________ */
+.HeadingCancelAScheduledClass
+{
+  color: #da0f63;
+}
+.CancelAScheduledClassTeacherDashboardTable thead tr th
+{
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.CancelAScheduledClassTeacherDashboardTable tbody td
+{
+  border-left: solid 2px black;
+}
+.CancelAScheduledClassTeacherDashboardTable tr td:nth-child(6) button
+{
+  border-radius: 30px;
+  width: 100px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  border: solid 1px black;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ______________CSS for Home Page________________ */
+/* ______________CSS for Home Page________________ */
+.HomeFont
+{
+  font-family: comic Sans MS;
+}
+.HomePageMainNavbar
+{
+  padding: 2px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#JoinYourClassLoginBtn
+{
+  border-radius: 15px;
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: solid 1px black;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(59, 31, 31, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#BookAFreeClassRegisterBtn
+{
+  color: #0388FE;
+  border-radius: 15px;
+  margin-left: 30px;
+  border: solid 1px black;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(59, 31, 31, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#BookAFreeClassRegisterBtn2
+{
+  margin-top: -35%;
+  position: absolute;
+  color: #0388FE;
+  border-radius: 15px;
+  border: solid 1px black;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(59, 31, 31, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.ComponentPersonalizedLearing
+{
+  margin-top: 2%;
+  margin-left: 20%;
+  height: 90%;
+  width: 90%;
+}
+.ContainerForFlyingRocket,.ContainerForComponentPersonalizedLearing,
+.ContainerForGroup10,.ContainerForCodeGurukulstemLogo
+{
+  position: relative;
+}
+#PersonalizedLIVELearningBtn
+{
+  position: absolute;
+  margin-top: -75%;
+  margin-left: 33%;
+  padding: 5%;
+  font-size: 25px;
+  border-radius: 20px;
+}
+.FlyingRocketBackground
+{
+  margin-top: 12%;
+  margin-left: 22%;
+  width: 80%;
+  height: 80%;
+}
+#RightAttitudeBuildingHomeBtn
+{
+  position: absolute;
+  margin-left: 2%;
+  margin-top: -153%;
+  padding: 5%;
+  font-size: 20px;
+}
+#SocialEmotionalLearningHomeBtn
+{
+  position: absolute;
+  margin-left: -1%;
+  margin-top: -110%;
+  padding: 5%;
+  font-size: 20px;
+}
+#CharacterBuildingHomeBtn
+{
+  position: absolute;
+  margin-left: -5%;
+  margin-top: -60%;
+  padding: 5%;
+  font-size: 20px;
+}
+#ValueSystemHomeBtn
+{
+  position: absolute;
+  margin-left: 2%;
+  margin-top: -25%;
+  padding: 5%;
+  font-size: 20px;
+}
+.HomeInfoImageBackground
+{
+  width: 80%;
+  margin-left: 11%;
+  margin-right: 12%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(59, 31, 31, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.HomeInfoBackground
+{
+  width: 95%;
+  margin-left: 2%;
+  margin-right: 1%;
+  padding: 3%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(59, 31, 31, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.Group10Image
+{
+  width: 100%;
+}
+.HeadingOfHomePage
+{
+  font-size: 50px;
+  font-weight: bold;
+}
+.HomePageCardMsg
+{
+  font-weight: 600;
+  font-size: 18px;
+}
+#HomePageCard1
+{
+  width: 16rem;
+  margin-left: 30%;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#HomePageCard2
+{
+  float: right;
+  width: 16rem;
+  margin-right: 30%;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#HomePageCard3
+{ 
+  margin-top: 40%;
+  width: 20rem;
+  margin-left: 25%;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#HomePageCard4
+{
+  margin-top: 45%;
+  float: right;
+  width: 20rem;
+  margin-right: 30%;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#BookAFreeClassRegisterBtn3
+{
+  color: #0388FE;
+  border-radius: 15px;
+  border: solid 1px black;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(59, 31, 31, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#BookAFreeClassRegisterBtn4
+{
+  color: #0388FE;
+  border-radius: 15px;
+  border: solid 1px black;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(59, 31, 31, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.HomeTextColor
+{
+  color: #0388FE;
+}
+.CodeGurukulstemLogo
+{
+  margin-top: 2%;
+  width: 100%;
+  height: 100%;
+}
+.LeftArrow
+{
+  position: absolute;
+  margin-left: -105%;
+  width: 20%;
+  height: 15%;
+}
+.RightArrow
+{
+  position: absolute;
+  margin-left: -5%;
+  width: 20%;
+  height: 15%;
+}
+.LeftDownArrow
+{
+  position: absolute;
+  margin-top: 58%;
+  margin-left: -110%;
+  width: 15%;
+  height: 20%;
+}
+.RightDownArrow
+{
+  position: absolute;
+  margin-top: 58%;
+  margin-left: 2%;
+  width: 15%;
+  height: 20%;
+}
+.DownwardArrow
+{
+  position: absolute;
+  margin-top: 99%;
+  margin-left: -50%;
+  width: 10%;
+  height: 20%;
+}
+#BackToTop
+{
+  margin-left: 85%;
+  border-radius: 20px;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(59, 31, 31, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.HomePageFooterNavbar1
+{
+  padding: 2px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: solid 1px black;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.HomePageFooterNavbar2
+{
+  padding: 2px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: solid 1px black;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.HomeTextColorFooter
+{
+  color: #0388FE;
+  float: left;
+}
+.CoursesCategoryBackground
+{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#CategoryBtnBeginner,#CategoryBtnIntermediate,#CategoryBtnAdvanced
+{
+  font-weight: 700;
+  border-radius: 30px;
+  margin: 5%;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#CoursePageCardModule1,#CoursePageCardModule2
+{
+  width: 18rem;
+  height: 38rem;
+  padding: 1%;
+  border: solid 1px black;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#Module1Badge1,#Module2Badge1,#Module1Badge2,
+#Module2Badge2,#Module1Badge3,#Module2Badge3
+{
+  font-size: 15px;
+  padding: 3%;
+  padding-left: 8%;
+  padding-right: 8%;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.CoursesModule1msg
+{
+  font-size: 15px;
+  font-weight: 600;
+}
+.CoursesModule2msg
+{
+  font-size: 12px;
+  font-weight: 600;
+}
+.hover3{
+    opacity: 0.6;
+}
+
+.hover4{
+    opacity: 1;
+}
+
+
+.font{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*____________________CSS for Contact Us______________________*/    
+/*____________________CSS for Contact Us______________________*/
+.ContactUsBackground
+{
+  margin: 6%;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*____________________CSS for About Us______________________*/    
+/*____________________CSS for About Us______________________*/
+.AboutUsBackground
+{
+  margin: 6%;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+
+/*____________________CSS for Forgot Password/ Username______________________*/  
+.ForgotPasswordContainer,.ForgotUsernameContainer
+{
+  padding: 15%;
+  margin: 5%;
+}
+.ForgotPageMsg
+{
+  font-size: 19px;
+}
+#ForgotPassword,#ForgotUsernameEmail,#ForgotUsernameMobile
+{
+  padding: 3%;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  height: 50%;
+  border: 1px solid #ACACAC;
+}
+#ForgotPasswordContinue,#ForgotUsernameSubmit
+{
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  width: 30%;
+  border: 1px solid #ACACAC;
+}
+#ForgotUsernameLink
+{
+  color: #ACACAC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*____________________CSS for Reset Password______________________*/
+.ResetPasswordContainer
+{
+  margin: 5%;
+  padding: 10%;
+} 
+.LogoForgotPassword
+{
+  margin-left: 150px;
+  width: 60px;
+  height: 110px;
+}
+.vertical 
+{ 
+  margin-left: 5%;
+  border-left: 4px solid gray; 
+  height: 120px; 
+  position:absolute;
+  border-radius: 5px;    
+}
+.ResetAccountHeading
+{
+  font-weight: 700;
+  margin-left: -90%;
+  margin-top: 50px;
+}
+#ResetNewPassword,#ResetReenterPassword
+{
+  margin-left: 25px;
+  font-size: 20px;
+  width: 90%;
+  border: 2px solid #ACACAC;
+}
+#ResetCancelBtn,#ResetNextBtn
+{
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 200px;
+  border: 2px solid #ACACAC;
+}

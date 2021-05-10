@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        font-size: 1.4vw;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <p>
+        Dear {{pname}}, <br/>
+        This is to inform you that <b>mentor {{teacher}}</b> has <b>sent back</b> the project <b>{{project}}</b> to <b>{{sname}}</b> with following comments:<br/>
+         <b>{{comments}}</b>
+        
+      </p>
+      <p>
+        We request you to ask <b>{{sname}}</b> to resubmit the project with corresponding changes. 
+      </p>
+    </div>
+  </body>
+</html>

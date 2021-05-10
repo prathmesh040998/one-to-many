@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        font-size: 1.4vw;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <p>
+        Dear {{pname}},<br />
+        <b>{{sname}}</b> will have his/her first online
+        <span style="color: red">LIVE</span> coding class on <b>{{date}}</b> at
+        <b>{{time}}</b>.
+      </p>
+      <p>
+        One of our best mentors, <b>{{mname}}</b> is very excited to have
+        {{sname}} for his/her class.
+      </p>
+      <p>
+        Its time to change {{sname}}'s future by joining this amazing
+        journey of creativity, knowledge and values with
+        <span style="color: red">Code Gurukul</span>.
+      </p>
+      <p>
+        Kindly <u>join the session 5 minutes prior</u> to the mentioned time by
+        clicking on the link below:
+      </p>
+      <p><a href="{{*Joining link*}}" style="color: blue">{{*Joining link*}}</a></p>
+      <p>
+        For any issues/feedbacks we can be contacted on the number below:
+        {{number}}
+      </p>
+      <p>
+        If you wish to reschedule the class, kindly click on the link below:
+        <a style="color: blue" href="{{link}}">{{link}}</a>
+      </p>
+      <p>Looking forward to have an amazing session with {{sname}}.</p>
+    </div>
+  </body>
+</html>

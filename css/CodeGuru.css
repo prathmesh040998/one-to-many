@@ -1,0 +1,272 @@
+.BackgroungLoginPage
+{
+    background: url('images/loginBackground.jpg'); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size:100% 100%; 
+    height: 100vh;
+    width: 100%;
+    font-family: comic sans MS;
+}
+#LoginButtonLoginPage
+{
+    width: 15em;
+}
+
+
+
+/* _____________Home______________ */
+.FontForHomePage
+{
+    font-family: comic sans MS;
+}
+#CoursePageCardModule1,#CoursePageCardModule2
+{
+  width: 18rem;
+  height: 42rem;
+  padding: 1%;
+  border: solid 1px black;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+
+
+
+
+/* _____________Home New______________ */
+.BackgroundColor
+{
+    background-color:  #D4F2FF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.BackgroundColor2
+{
+    background-color: #59BDE7 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#LogoForNewHome
+{
+    height: 230px;
+    width: 160px;
+}
+.NewHomeNavbar
+{
+    background-color: #438BD2;
+    border-top-left-radius: 70px;
+}
+#CoursesPricingHomePageBtn,#LoginHomePageBtn
+{
+    border-radius: 15px;
+    font-family: Arial;
+}
+.ShadowMade
+{
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+#BookAFreeClassHomeNavbarPageBtn,#BookAFreeClassPersonalizedLIVEHomePageBtn,
+#BookAFreeClassChampsHomePageBtn,#BookAFreeClassPillarsHomePageBtn
+{
+    background-color: #b41948;
+    border-radius: 10px;
+    font-family: Arial;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #640202;
+}
+.container-fluidMade
+{
+    position: relative;
+}
+.ChildLearnLogo
+{
+    position: absolute;
+    left: 10%;
+    transform: translate(-10%, -92%); 
+}
+.Component25
+{
+    position: absolute;
+    left: 8%;
+    transform: translate(-5%, -18%);
+    width: 95%;
+}
+.RoadMapTextMsg
+{
+    position: absolute;
+    left: 35%;
+    transform: translate(-25%, -25%);
+}
+#BookAFreeClassHomePageBtnRoadMap
+{
+    position: absolute;
+    background-color: #b41948;
+    border-radius: 10px;
+    font-family: Arial;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #640202;
+    top: 35%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 1vw;
+}
+#BookAFreeClassHomePageBtnComp13
+{
+    position: absolute;
+    background-color: #b41948;
+    border-radius: 10px;
+    font-family: Arial;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #640202;
+    top: 95%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+#NewHomePageCardModule1
+{
+  width: 14rem;
+  height: 34rem;
+  padding: 1%;
+  border: solid 1px black;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#NewHomePageCardModule2
+{
+  width: 17rem;
+  height: 34rem;
+  padding: 1%;
+  border: solid 1px black;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+#NewHomePageCardModule3
+{
+  width: 20rem;
+  height: 34rem;
+  padding: 1%;
+  border: solid 1px black;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.ChampsMsgContainer
+{
+    position: relative;
+}
+.ChampMsgCard
+{
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 5%;
+    right: 5%;
+    font-size: 1.2vw;
+}
+.ChampsPhotoCircle
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: calc(20% - 80px); 
+}
+.ParentsMsgCards
+{
+    background-color: #4f8cff !important;
+    color: white;
+    font-size: 13px;
+    font-family: arial;
+    border-radius: 30px !important;
+    height: 80%;
+    width: 98%;
+}
+.ParentsPhotoCircle
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(25% - 75px);
+}
+.PillaesCards1,.PillaesCards3
+{
+    background-color: #fcdc5c !important;
+    color: #0A0A0A;
+    font-family: arial;
+    height: 92%;
+    width: 95%;
+}
+.PillaesCards2
+{
+    background-color: rgb(130, 215, 255) !important;
+    color: #0A0A0A;
+    font-family: arial;
+    height: 92%;
+    width: 95%;
+}
+.PillarsPhotoCircle
+{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    position: absolute;
+    top: -130px;
+    left: calc(65% - 35px);
+}
+.NewHomeFooterbar
+{
+    background-color: #2699FB;
+    font-family: arial;
+    border-top-left-radius: 70px;
+}
+#NewHomeBacktoTopBtn
+{
+    font-size: 30px;
+    color: #2780EB;
+    height: 55px;
+    width: 311px;
+}
+
+.hover3{
+    opacity: 0.6;
+    width: 180px;
+    border-radius: 70px;
+   height: 50px;
+}
+
+.hover4{
+    opacity: 1;
+    width: 200px;
+    border-radius: 70px;
+   height: 60px;
+}
+.font{
+    font-weight: bold;
+}
