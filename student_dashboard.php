@@ -47,9 +47,17 @@ if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
     $userData = getUserData($_SESSION['user_id']);
     $schedules = getStudentsSchedules($_SESSION['user_id']);
     $cancelClasses = getStudentCancelClasses($_SESSION['user_id']);
-
+    $otm=otm($schedules[0]->schedule_id);
+    $cnt=0;
+    foreach($otm as $o)
+    {
+    // print_r($o);
+    $cnt++;
+    }
+    // print_r($cnt);
+   
     // echo "<pre>";
-    // print_r($schedules);
+    //  print_r($schedules);
     // echo "</pre>";
 
 
@@ -712,10 +720,27 @@ $referal_link = $url . 'home.php?id=' . $_SESSION['user_id'];
                             </button>
                         </div>
                         <div class="col">
-                            <button <?= $disabledButton ?> style="height:64px" type="button" id="CancelRescheduleClass" class="btn btn-warning btn-block" data-toggle="tab" href="#CancelRescheduleClassPane">
-                                Cancel/ Reschedule a class
-                            </button>
-                        </div>
+                         
+                  
+                        <button <?php if ($cnt>1){ ?> disabled <?php   } ?> style="height:64px" type="button" id="CancelRescheduleClass" class="btn btn-warning btn-block" data-toggle="tab" href="#CancelRescheduleClassPane">
+                            Cancel/ Reschedule a class
+                       
+                        
+                           
+                        </button>
+                    </div>
+                        <?php
+                        // foreach($schedules as $sch)
+                        // {
+                        //    var_dump( $sch->schedule_id);
+                        // }
+                        // //  print_r( $schedules[0]->schedule_id);
+                            // print_r($cnt);
+                        ?>
+                       
+                       <!-- <input type="button" value="Add to Cart" <?php if ($cnt>1){ ?> disabled <?php   } ?> >)" /> -->
+                            
+                  
                     </div>
                 </div>
                 <br />
@@ -2000,6 +2025,7 @@ $referal_link = $url . 'home.php?id=' . $_SESSION['user_id'];
                                             <?php
                                             $i = 0;
                                             foreach ($schedules as $value) {
+                                                // print_r($value);
                                                 if ($value->validToCancel == 1) {
 
                                                     $i = $i + 1;
@@ -2011,7 +2037,7 @@ $referal_link = $url . 'home.php?id=' . $_SESSION['user_id'];
                                                             <input type="text" value="<?= $value->lesson_name ?>" class="form-control shadow" disabled />
                                                         </td>
                                                         <td>
-                                                            <input type="text" class="form-control shadow" name="t_id" value="<?= $teacherName ?>" disabled />
+                                                            <input type="text" class="form-control shadow" name="t_id" value="<?= $value->first_name. " " .$value->last_name ?>" disabled />
                                                         </td>
                                                         <td>
                                                             <button id="ScheduleThisClass1" type="button" onclick="cancelSchedule(this)" class="btn btn-block btn-sm btn-danger">

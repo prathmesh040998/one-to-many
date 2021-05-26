@@ -15,8 +15,9 @@ if ($_SESSION['role'] == 'teacher') {
 }
 $students = getUsers('students');
 //   $links = getLinks();
-
-
+// echo "<pre>"
+// print_r($schedules);
+// die();
 
 $username = "";
 $loggedIn = false;
@@ -32,6 +33,7 @@ if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
         header("Location: student_dashboard.php");
     }
 }
+// print_r($cancelClasses);
 ?>
 
 <!doctype html>
@@ -339,6 +341,9 @@ if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
                                 <?php
                                 $a = 0;
                                 foreach ($schedules as $value) {
+                                   
+                                    // print_r($value);
+                                    // die();
                                     if ($value->active) {
                                         $a = $a + 1;
                                     }
@@ -369,8 +374,15 @@ if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
                             <tbody class="text-center">
                                 <?php
 
-                                //   print_r($schedules);
+                                //    print_r($schedules);
                                 foreach ($schedules as $value) {
+
+                                    // if($value->status=='cancel')
+                                    // {
+                                    //     // print_r($value);
+                                    //     continue;
+                                    // }
+                                  
 
                                     if (!$value->over) {
                                 ?>
@@ -378,10 +390,10 @@ if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
                                             <th scope="row"><?php echo "$value->lesson_name"; ?></th>
                                             <td>
                                                 <?php
-                                                // $uData = getUserData($value->student_id);
-                                                // foreach ($uData as $u) {
-                                                //     echo $u->first_name . " " . $u->last_name;
-                                                // }
+                                                $uData = getUserData($value->student_id);
+                                                foreach ($uData as $u) {
+                                                    echo $u->first_name . " " . $u->last_name;
+                                                }
                                                 ?>
                                             </td>
                                             <td><?php echo "$value->schedule_time"; ?></td>
@@ -1267,6 +1279,7 @@ if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
                                 <?php
                                 $count = 0;
                                 foreach ($cancelClasses as $class) {
+                                //  print_r($class);
                                     $count = $count + 1;
                                 ?>
 
@@ -1274,7 +1287,7 @@ if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
                                         <th scope="row"><?= $count ?></th>
                                         <td>
                                             <?php
-                                            $uData = getUserData($class->student_id);
+                                           $uData = getUserData($class->student_id);
                                             foreach ($uData as $u) {
                                                 echo $u->category;
                                             }
@@ -1284,7 +1297,7 @@ if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
                                         <td><?= $class->schedule_time ?></td>
                                         <td>
                                             <?php
-                                            $uData = getUserData($class->student_id);
+                                   $uData = getUserData($class->student_id);
                                             foreach ($uData as $u) {
                                                 echo $u->first_name . " " . $u->last_name;
                                             }
@@ -1321,7 +1334,14 @@ if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
 
                                 <?php
                                 $count = 0;
+                          
                                 foreach ($schedules as $value) {
+                                    // print_r($value);
+                                    // if($value->status=='cancel')
+                                    // {
+                                    //     // print_r($value);
+                                    //     continue;
+                                    // }
                                     if ($value->validToCancel == 1) {
                                         $count = $count + 1;
                                         $uData = getUserData($value->student_id);
@@ -1636,10 +1656,10 @@ if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
                     success: function(data) {
                         console.log(data)
                         if (data == 1) {
-                            // alert("Scheduled Cancel");
+                             alert("Scheduled Cancel");
                             location.reload();
                         } else {
-                            alert("fail");
+                            alert(data);
                         }
                     },
                 });

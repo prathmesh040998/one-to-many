@@ -1,4 +1,4 @@
-<?php
+ <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 session_start();
@@ -24,13 +24,23 @@ if (isset($_GET['session_rewards'])) {
 }
 // session rewards end
 
+function otm($schedule_id)
+{
+  global $dbCon;
+  $handle = $dbCon->prepare("select * from schedule_students where schedule_id = '$schedule_id' ");
+  $handle->execute();
+  $result = $handle->fetchAll(\PDO::FETCH_OBJ);
+  // print_r($result);
+  return $result;
+}
+
 function getUserData($userId = null)
 {
   global $dbCon;
-  $handle = $dbCon->prepare('select * from users where user_id =' . $userId);
+  $handle = $dbCon->prepare("select * from users where user_id = '$userId' ");
   $handle->execute();
   $result = $handle->fetchAll(\PDO::FETCH_OBJ);
-  //print_r($result);
+  // print_r($result);
   return $result;
 }
 
@@ -163,15 +173,20 @@ function getScheduleDetails($sid)
 
 function getTeachersSchedules($userId = null)
 {
+  // print_r($userId);
+  // die();
   global $dbCon;
   $handle = $dbCon->prepare("
-      select *,(schedule_time < NOW()) as expired , (schedule_time > (NOW() + INTERVAL 1 HOUR)) as upcoming, (schedule_time > (NOW() + INTERVAL 6 HOUR)) as validToCancel, (NOW() between (schedule_time - Interval 10 Minute) and (schedule_time + INTERVAL 1 HOUR)) as active, (NOW() > (schedule_time + INTERVAL 1 HOUR)) as `over` from schedules
-       left join lessons on schedules.lesson_id=lessons.lesson_id
-       left join users on schedules.teacher_id=users.user_id
-   where schedule_cancellation_date IS NULL and schedules.teacher_id= $userId order by schedule_time asc");
+  select *,(schedule_time < NOW()) as expired , (schedule_time > (NOW() + INTERVAL 1 HOUR)) as upcoming, (schedule_time > (NOW() + INTERVAL 6 HOUR)) as validToCancel, (NOW() between (schedule_time - Interval 10 Minute) and (schedule_time + INTERVAL 1 HOUR)) as active, (NOW() > (schedule_time + INTERVAL 1 HOUR)) as `over` from schedule_students
+  left join schedules on schedules.schedule_id=schedule_students.schedule_id
+  left join lessons on schedules.lesson_id=lessons.lesson_id
+  left join users on schedules.teacher_id=users.user_id
+where schedules.teacher_id= $userId and NOT(status <=> 'cancel')  order by schedule_time asc");
   $handle->execute();
   $result = $handle->fetchAll(\PDO::FETCH_OBJ);
-  //print_r($result);
+  // echo "<pre>";
+  // print_r($result);
+  // die();
   return $result;
 }
 
@@ -441,10 +456,19 @@ if (isset($_POST['projectReview'])) {
 function cancelSchedule($schedule_id)
 {
 
+    // print_r($schedule_id);
+
   global $dbCon;
   $date = date("Y-m-d H:i:s");
-  $handle1 = $dbCon->prepare("UPDATE `schedules` SET `status` = 'cancel',schedule_cancellation_date='$date'  WHERE `schedules`.`schedule_id` = $schedule_id;");
+  // $handle1 = $dbCon->prepare("UPDATE `schedule_students` SET `status` = 'cancel',schedule_cancellation_date='$date'  WHERE `schedule_students`.`schedule_id` = $schedule_id;");
+  //  $handle1->execute();
+
+  $handle1 = $dbCon->prepare("UPDATE `schedule_students`
+              left join schedules on schedule_students.schedule_id=schedules.schedule_id
+   SET `status` = 'cancel',schedules.schedule_cancellation_date='$date'  WHERE `schedule_students`.`schedule_id` = $schedule_id;");
   $handle1->execute();
+
+
 
   $student = get_full_user_details($_SESSION['user_id']);
   $schedule = (array)getScheduleDetails($schedule_id);
@@ -777,7 +801,10 @@ where schedule_students.status = 'cancel' and student_id=$student_id order by sc
 function getTeacherCancelClasses($teacher_id)
 {
   global $dbCon;
-  $handle = $dbCon->prepare("select *from schedules left join lessons on schedules.lesson_id=lessons.lesson_id where schedule_cancellation_date IS NOT NULL and teacher_id = $teacher_id");
+  $handle = $dbCon->prepare("select * from schedules 
+  left join schedule_students on schedules.schedule_id=schedule_students.schedule_id
+  left join lessons on schedules.lesson_id=lessons.lesson_id 
+  where schedule_students.status='cancel' and teacher_id = $teacher_id");
   $handle->execute();
   $result = $handle->fetchAll(\PDO::FETCH_OBJ);
   // print_r($result);
@@ -846,7 +873,8 @@ if (isset($_POST['id'])) {
   $stud_userId = $_POST['id'];
   //echo 'user_id : '.$userId;
   global $dbCon;
-  $handle = $dbCon->prepare('select *,(schedule_time < NOW()) as expired , (schedule_time > (NOW() + INTERVAL 1 HOUR)) as upcoming,  (NOW() between (schedule_time - Interval 10 Minute) and (schedule_time + INTERVAL 1 HOUR)) as active, (NOW() > (schedule_time + INTERVAL 1 HOUR)) as `over` from schedules
+  $handle = $dbCon->prepare('select *,(schedule_time < NOW()) as expired , (schedule_time > (NOW() + INTERVAL 1 HOUR)) as upcoming,  (NOW() between (schedule_time - Interval 10 Minute) and (schedule_time + INTERVAL 1 HOUR)) as active, (NOW() > (schedule_time + INTERVAL 1 HOUR)) as `over` from schedule_students
+        left join schedules on schedule_students.schedule_id=schedules.schedule_id
         left join lessons on schedules.lesson_id=lessons.lesson_id
         left join users on schedules.teacher_id=users.user_id
     where  status != "cancel" and student_id="' . $stud_userId . '"'
